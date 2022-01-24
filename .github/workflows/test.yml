@@ -26,9 +26,9 @@ jobs:
         with:
             node-version: '17'
       - name: Add Node Module
-        run : yarn
+        run : npm install
       - name: Build The Project
-        run: yarn build
+        run: npm build
       - name: set vercel cli
         run: |
           cd build
@@ -37,7 +37,7 @@ jobs:
           touch project.json
           echo '{\"orgId\":\"$ORG_ID\","\projectId\":\"$PROJECT_ID\"}' > project.json
       - name: Deploying The Project
-        run: yarn deploy
+        run: npm deploy
       - name: Finished build
         run : echo "Hurry"
       
