@@ -15,7 +15,7 @@ export default function ContactCard(props) {
                     <div className="details grid content-center ">
                         <Link to={`/contact/${id}`} state={{ contact: props.contact }}>
                             <div className="font-bold text-xl cursor-pointer">{name}</div>
-                            <div className='text-2xl cursor-pointer'>{email}</div>
+                            <div className='text-xl cursor-pointer'>{email}</div>
                         </Link>
                     </div>
                     <div className="icons grid grid-flow-row justify-end content-center pr-2">
