@@ -28,7 +28,7 @@ jobs:
       - name: Add Node Module
         run : npm install
       - name: Build The Project
-        run: npm build
+        run: npm run build
       - name: set vercel cli
         run: |
           cd build
