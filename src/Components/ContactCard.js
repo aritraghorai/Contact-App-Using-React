@@ -28,7 +28,7 @@ export default function ContactCard(props) {
                                     src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-edit-interface-kiranshastry-solid-kiranshastry.png" />
                             </div>
                         </Link>
-                        <Link to={`/delete/${id}`} state={{ contact: props.contact }}>
+                        <Link to={`/delete/${id}`} state={{ id: id }}>
                             <div className="delete w-8   cursor-pointer">
                                 <img alt=''
                                     src="https://img.icons8.com/plasticine/100/000000/filled-trash.png" />
