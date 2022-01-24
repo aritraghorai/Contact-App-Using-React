@@ -2,10 +2,10 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 export default function DeleteConfarm(props) {
-    console.log(props);
+    // console.log(props);
     const location = useLocation()
     const navigate = useNavigate()
-    console.log(location);
+    // console.log(location);
     const yes = () => {
         props.delete(location.state.id)
         navigate("/")
